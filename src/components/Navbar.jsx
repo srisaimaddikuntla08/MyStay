@@ -49,8 +49,6 @@ const Navbar = () => {
 
     return (
             <nav className={`fixed top-0 left-0 0 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 ${isScrolled ? "bg-white/80 shadow-md text-gray-700 backdrop-blur-lg py-3 md:py-4" : "py-4 md:py-6"}`}>
-
-        
                 <Link to={'/'} className="flex items-center gap-2">
                 <img className={`h-9 ${isScrolled && "invert opacity-80"}`} src={assets.logo} alt="logo" />
                 </Link>
@@ -78,7 +76,7 @@ const Navbar = () => {
                         </UserButton.MenuItems>
                     </UserButton> :
                     <button onClick={openSignIn} className={`px-8  cursor-pointer py-2.5 rounded-full ml-4 transition-all duration-500 ${isScrolled ? "text-black bg-white" : "bg-black text-white"}`}>
-                        Login
+                       Login 
                     </button>
 }
                 </div>
